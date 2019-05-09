@@ -8,9 +8,7 @@ Year.prototype.isValidYear = function () {
 };
 
 Year.prototype.isLeapYear = function () {
-
     return isDivisibleBy100(this.year) ? isDivisibleBy400(this.year) : isDivisibleBy4(this.year);
-
 };
 
 function isDivisibleBy4(year) {
