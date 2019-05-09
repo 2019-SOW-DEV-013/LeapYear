@@ -2,19 +2,23 @@ const Year = require('./year');
 
 document.getElementById("check").onclick = function () {
 
-    year = new Year(Number(document.getElementById("year").value));
+    var year = new Year(Number(document.getElementById("year").value));
 
-    if (year.isValidYear(year)){
+    if (year.isValidYear()){
         if(year.isLeapYear()){
-            document.getElementById("message").innerHTML = "Leap Year";
+            displayMessage("Leap Year");
         }
         else{
-            document.getElementById("message").innerHTML = "Not a Leap Year";
+            displayMessage("Not a Leap Year");
         }
         
     }
     else{
-        document.getElementById("message").innerHTML = "Invalid Year. Please Enter a valid year from 1582 as Gregorian Calendar is adopted from 1582";
+        displayMessage("Invalid Year. Please Enter a valid year from 1582 as Gregorian Calendar is adopted from 1582");
     }
 
+}
+
+function displayMessage(message){
+    document.getElementById("message").innerHTML =message;
 }
