@@ -9,7 +9,3 @@ document.getElementById("check").onclick = function () {
     }
 
 }
-
-function isValidYear(value) {
-    return false;
-}
