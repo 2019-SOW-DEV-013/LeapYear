@@ -25,5 +25,9 @@ describe('check leap year', function () {
         var year = new Year(1700);
         expect(year.isLeapYear()).toBe(false);
     });
+    it('should display leap year when given year is divisible by 4 but not divisible by 100', function () {
+        var year = new Year(2004);
+        expect(year.isLeapYear()).toBe(true);
+    });
     
 });
