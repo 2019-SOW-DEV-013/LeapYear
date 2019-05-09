@@ -16,3 +16,10 @@ describe('check valid year', function () {
         expect(year.isValidYear()).toBe(false);
     });
 });
+describe('check leap year', function () {
+    it('should display leap year when given year is divisible by 400', function () {
+        var year = new Year(1600);
+        expect(year.isLeapYear()).toBe(true);
+    });
+    
+});
