@@ -12,12 +12,10 @@ document.getElementById("check").onclick = function () {
     if (year.isValidYear()){
         if(year.isLeapYear()){
             displayMessage(MESSAGE.LEAP_YEAR);
-        }
-        else{
+        }else{
             displayMessage(MESSAGE.NON_LEAP_YEAR);
         }
-    }
-    else{
+    }else{
         displayMessage(MESSAGE.INVALID_YEAR);
     }
 }
