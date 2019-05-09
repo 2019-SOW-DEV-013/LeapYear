@@ -1,4 +1,4 @@
-const Year = require('../src/year');
+var Year = require('../src/year');
 
 describe('check valid year', function () {
     it('should display invalid year when given year is 0', function () {
