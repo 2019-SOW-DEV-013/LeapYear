@@ -1,9 +1,9 @@
 var Year = function(value) {
-    this.year=value;
+    this.year = value;
 };
 
 Year.prototype.isValidYear=function(){
-    return false;    
+    return this.year > 0;    
 };
 
 module.exports = Year;
