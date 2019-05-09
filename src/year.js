@@ -9,8 +9,20 @@ Year.prototype.isValidYear = function () {
 
 Year.prototype.isLeapYear = function () {
 
-    return this.year % 100 ===0 ? this.year % 400 === 0  : this.year % 4 === 0;
+    return isDivisibleBy100(this.year) ? isDivisibleBy400(this.year) : isDivisibleBy4(this.year);
 
 };
+
+function isDivisibleBy4(year) {
+    return year % 4 === 0;
+}
+
+function isDivisibleBy100(year) {
+    return year % 100 === 0;
+}
+
+function isDivisibleBy400(year) {
+    return year % 400 === 0;
+}
 
 module.exports = Year;
