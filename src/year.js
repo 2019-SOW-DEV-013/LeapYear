@@ -3,7 +3,7 @@ var Year = function(value) {
 };
 
 Year.prototype.isValidYear=function(){
-    return this.year > 0;    
+    return this.year >= 1582;    
 };
 
 module.exports = Year;

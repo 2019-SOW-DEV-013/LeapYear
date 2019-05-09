@@ -10,4 +10,9 @@ describe('check valid year', function () {
         var year = new Year(Number(yearValueEntered));
         expect(year.isValidYear()).toBe(false);
     });
+    it('should display invalid year when given year is less than 1582', function () {
+        var yearValueEntered="1523";
+        var year = new Year(Number(yearValueEntered));
+        expect(year.isValidYear()).toBe(false);
+    });
 });
