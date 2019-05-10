@@ -14,10 +14,6 @@ The Gregorian Calendar is quite accurate, but could be made more accurate by add
 2.  All years divisible by 100 but not by 400 are NOT leap years (so, for example, 1700, 1800, and 1900 were NOT leap years, NOR will 2100 be a leap year),
 3.  All years divisible by 4 but not by 100 ARE leap years (e.g., 2008, 2012, 2016),
 4.  All years not divisible by 4 are NOT leap years (e.g. 2017, 2018, 2019).
-
-**Additional rule**
-	
-	Eliminate the years divisible by 4000 from leap year
 	
 ## Getting Started
 
